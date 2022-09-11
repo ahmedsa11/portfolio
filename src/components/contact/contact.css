@@ -1,0 +1,81 @@
+.contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EEE; 
+}
+.con{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.con img{
+    width: 200px;
+}
+.con .email{
+        /* display: flex; */
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        margin: 20px 0px;
+}
+.con .phone{
+    margin: 20px 0px;
+    /* display: flex; */
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.con a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.form input{
+    padding: 7px;
+    border: 1px solid blueviolet ;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 250px;
+}
+.form textarea{
+    padding: 7px;
+    border: 1px solid blueviolet ;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 250px;
+    resize: none;
+}
+.form input:focus,.form textarea:focus{
+    outline: none;
+}
+.form button{
+    padding: 8px;
+    border: none;
+    background: blueviolet;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.7s ease;
+}
+.form button:hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+.message{
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+ 
+    display: none;
+}

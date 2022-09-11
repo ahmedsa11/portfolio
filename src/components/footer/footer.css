@@ -1,0 +1,33 @@
+
+/*Start Footer*/
+.footer{
+    padding: 10px 0;
+        background-color:#faa403;
+    color: aliceblue;
+}
+.footer h1,.footer h2{
+      color: aliceblue;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer ul li {margin-bottom: 15px}
+.footer ul li img{
+    width: 64px;
+    border-radius: 18px;
+}
+.footer i{font-size: 25px;color:white;margin-right: 15px;transition: all .5s ease;
+    display: contents;
+    cursor: pointer}
+.footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.footer i:hover{color:cyan}

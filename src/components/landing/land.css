@@ -1,0 +1,139 @@
+.land{
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url('../../img/Picture1.jpg');
+    background-size: cover;
+    background-repeat: none;
+    overflow: hidden;
+
+}
+.land .in{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 18px; */
+}
+.wrapper{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 20px;
+}
+.wrapper h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: blueviolet;
+}
+.wrapper .dynamic-txt h1{
+    font-weight: bold;
+        color: black;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 6s steps(30,end),
+          blink-caret .5s step-end infinite;
+          width: fit-content;
+}
+@media only screen and (max-width: 700px) {
+    .wrapper .dynamic-txt h1 {
+     font-size: 17px;
+    }
+  }
+.wrapper .dynamic-txt span{
+    color: blueviolet;
+}
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width:100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+      }
+.img{
+    display: block;
+    margin: 30px auto;
+    position: relative;
+    width: fit-content;
+}
+.img img {
+    object-fit: cover;
+    border-radius: 60px;
+    width: 250px; 
+}
+.cv{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #faa403;
+    padding: 9px;
+    border-radius: 0px 20px 20px 0px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 2s ease-in-out;;
+ 
+    transform: rotate(90deg);
+    animation-name: cv;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+    top: -79px;
+}
+.cv:hover{
+    color: #fff;
+}
+@keyframes cv {
+    0%,50%{
+       top: 50px !important;
+    }
+    100%{
+        top: 50px;
+    }
+}
+.navbarr{
+    position:fixed;
+    background: rgba(0, 0, 0,0.6);
+    padding: 10px;
+    right: 6px;
+    transform: translateY(-50%);
+    top: 50%;
+    z-index: 99;
+    border-radius: 14px;
+}
+.navbarr ul{
+list-style: none;
+padding: 0;
+z-index: 999;
+}
+.navbarr ul li{
+    cursor: pointer;
+    margin: 24px 0px;
+}
+.navbarr ul li img{
+    object-fit: cover;
+    transition: all 0.5s ease;
+    padding: 5px;
+}
+.navbarr ul li img:hover{
+    background-color: #333;
+    border-radius:10px;
+}
+.navbarr ul li img.activelink:hover{
+    background-color: #faa403;
+    border-radius:10px;
+}
+.navbarr ul li img:last-child{
+    width: 41px;
+}
+.activelink{
+    background-color: #faa403;
+    border-radius:10px;
+}
