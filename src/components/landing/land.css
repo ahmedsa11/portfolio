@@ -105,13 +105,14 @@
     right: 6px;
     transform: translateY(-50%);
     top: 50%;
-    z-index: 99;
+    z-index: 999;
     border-radius: 14px;
 }
 .navbarr ul{
 list-style: none;
 padding: 0;
 z-index: 999;
+visibility: visible !important
 }
 .navbarr ul li{
     cursor: pointer;

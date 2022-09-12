@@ -43,7 +43,6 @@
     font-size: 3rem;
     font-weight: 600;
     color: #33363b;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -58,13 +57,11 @@
 .article_container_content h4 {
     font-size: 1.125rem;
     font-weight: 600;
-    font-family: 'PT Serif', serif;
     font-style: italic;
     margin: 0 16px;
 }
 
 .article_container_content p {
-    font-family: 'PT Serif', serif;
     font-size: 1.125rem;
     color: #626a73;
     text-align: center;

@@ -2,6 +2,7 @@
   /* Start Timeline */
   .timeline {
     background-color: #EEE; 
+    padding-top: 20px;
   }
   .timeline .timeline-content {
     position: relative;

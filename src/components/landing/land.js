@@ -28,15 +28,14 @@ const Land = () => {
     <>
       <div className="land" id="home">
         <a
+          href="./AhmedSalama.pdf"
           className="cv"
           data-wow-duration="2s"
-          href="./AhmedSalama.pdf"
           download
           alt="cv"
         >
           Download Cv
         </a>
-
         <div className="in">
           <div className="wrapper">
             <div className="static-txt">

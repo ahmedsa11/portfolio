@@ -41,7 +41,7 @@
     height: 180px;
 }
 .cardd .info h3{
-color: #faa403;
+color: #fbb808;
 font-weight: bold;
 }
 .cardd .info p{
@@ -55,7 +55,7 @@ color: #fff;
 }
 .cardd .button a{
     text-decoration: none;
-    background-color: darkmagenta;
+    background-color: #fbb808;
     padding: 10px;
     border-radius: 11px;
     color: white;
