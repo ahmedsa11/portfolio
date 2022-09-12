@@ -47,14 +47,14 @@ const Contact = () => {
           <img src={email} alt="email" />
 
           <a href="mailto:Ahmedsa122333@gmail.com">
-            <h2>send a message</h2> Ahmedsa122333@gmail.com
+            <h2>Click to send a message</h2> Ahmedsa122333@gmail.com
           </a>
         </div>
         <div className="phone">
           <img src={phone} alt="phone" />
 
           <a href="https://wa.me/01066923650?text=">
-            <h2>send a message</h2> +201066923650
+            <h2>Click to send a message</h2> +201066923650
           </a>
         </div>
       </div>

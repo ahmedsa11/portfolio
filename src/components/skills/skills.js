@@ -17,7 +17,7 @@ const Skills = () => {
             className="text-center"
             style={{ color: "#faa403", fontWeight: "bold", margin: "20px 0px" }}
           >
-            Skills
+            Education & Skills
           </h1>
 
           <div className="container">
@@ -78,7 +78,7 @@ const Skills = () => {
                             <img src={r1} alt="d" /> Css
                           </li>
                           <li>
-                          
+                    
                             <img src={r1} alt="d" /> Bootstrap
                           </li>
                           <li>
@@ -95,6 +95,7 @@ const Skills = () => {
                           </li>
                         </ul>
                       </div>
+          
                       <div className="col-md-6">
                         <ul className="sk">
                           <li>

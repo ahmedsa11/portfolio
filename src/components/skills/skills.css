@@ -1,8 +1,6 @@
 
   /* Start Timeline */
   .timeline {
-    padding-top: 50px;
-    padding-bottom: 50px;
     background-color: #EEE; 
   }
   .timeline .timeline-content {
@@ -22,7 +20,7 @@
   .timeline .timeline-content .year {
     margin: 20px auto;
     width: 94px;
-    background-color: blueviolet;
+    background-color: #faa403;
     position: relative;
     z-index: 2;
     border-radius: 4px;

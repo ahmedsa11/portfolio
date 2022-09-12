@@ -11,12 +11,16 @@
     overflow: hidden;
     margin: 10px;
     padding: 20px 6px;
-    background: rgba(0, 0, 0, 0.5);
+    background-color:blueviolet;
     border-radius: 26px;
     transition: all 0.5s ease;
 }
 .cardd:hover{
     background-color: transparent;
+
+}
+.cardd:hover p{
+    color: black !important;
 }
 .cardd .img{
     width: 264px;
@@ -34,7 +38,16 @@
 }
 .cardd .info{
     text-align: center;
-    color: darkmagenta;
+    height: 180px;
+}
+.cardd .info h3{
+color: #faa403;
+font-weight: bold;
+}
+.cardd .info p{
+font-size: 18px;
+color: #fff;
+
 }
 .cardd .button{
     display: flex;
