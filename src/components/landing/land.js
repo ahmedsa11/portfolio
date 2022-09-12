@@ -7,6 +7,7 @@ import contact from "../../img/contact-svgrepo-com.svg";
 import skills from "../../img/task-svgrepo-com.svg";
 import about from "../../img/profile-about-mobile-ui-svgrepo-com.svg";
 import projects from "../../img/map-svgrepo-com.svg";
+import cv from './Ahmed.Salama.pdf'
 const Land = () => {
   const activeLink = () => {
     const link = document.querySelectorAll(".land img");
@@ -28,7 +29,7 @@ const Land = () => {
     <>
       <div className="land" id="home">
         <a
-          href="./AhmedSalama.pdf"
+          href={cv}
           className="cv"
           data-wow-duration="2s"
           download
