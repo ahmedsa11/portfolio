@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer" id="contact">
         <div className="container">
           <div className="row">
-            <div class="col-md-12">
+            <div className="col-md-12">
               <h2 className="text-center wow fadeInDown">Follow Me</h2>
               <ul>
                 <li className="wow fadeInLeft"data-wow-duration="2s">

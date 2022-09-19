@@ -10,14 +10,13 @@ const Skills = () => {
   }, []);
   return (
     <>
-    
       <div className="skills" id="skills">
         <div className="timeline">
           <h1
             className="text-center"
             style={{ color: "#faa403", fontWeight: "bold", margin: "20px 0px" }}
           >
-            Education & Skills
+            Education {"&"} Skills
           </h1>
 
           <div className="container">
@@ -33,13 +32,13 @@ const Skills = () => {
                   >
                     <h3>Education</h3>
                     <p>
-                      Faculty of Computer and Informatics-Suez Canal University{" "}
+                      Faculty of Computer and Informatics-Suez Canal University  </p>
                       <hr />
-                      Bachelor's Degree,Computer Science department (2022){" "}
+                      <p>Bachelor's Degree,Computer Science department (2022)</p>  
                       <hr />
-                      Overall rating: ( Very Good ) <hr />
-                      Project Grad: ( A+ )
-                    </p>
+                      <p> Overall rating: ( Very Good ) </p>  <hr />
+                      <p> Project Grad: ( A+ )</p> 
+                  
                   </div>
                 </div>
               </div>
@@ -53,7 +52,7 @@ const Skills = () => {
                     data-wow-offset="30"
                   >
                     <h3>Front-End </h3>
-                    <p>Up to one year work with react js & vanilla js</p>
+                    <p>Up to one year work with react js {"&"} vanilla js</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +77,6 @@ const Skills = () => {
                             <img src={r1} alt="d" /> Css
                           </li>
                           <li>
-                    
                             <img src={r1} alt="d" /> Bootstrap
                           </li>
                           <li>
@@ -95,7 +93,6 @@ const Skills = () => {
                           </li>
                         </ul>
                       </div>
-          
                       <div className="col-md-6">
                         <ul className="sk">
                           <li>
@@ -130,7 +127,6 @@ const Skills = () => {
                 <div className="content">
                   <h3>Soft Skills</h3>
                   <ul className="sk">
-                  
                     <li>
                       <img src={r1} alt="d" />
                       COMMUNICATION

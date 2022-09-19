@@ -8,6 +8,7 @@ import skills from "../../img/task-svgrepo-com.svg";
 import about from "../../img/profile-about-mobile-ui-svgrepo-com.svg";
 import projects from "../../img/map-svgrepo-com.svg";
 import cv from './Ahmed.Salama.pdf'
+import Up from "../up/up";
 const Land = () => {
   const activeLink = () => {
     const link = document.querySelectorAll(".land img");
@@ -26,8 +27,9 @@ const Land = () => {
   }, []);
 
   return (
-    <>
+    <> <Up/>
       <div className="land" id="home">
+       
         <a
           href={cv}
           className="cv"
