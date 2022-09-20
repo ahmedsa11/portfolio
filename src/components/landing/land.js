@@ -7,10 +7,10 @@ import contact from "../../img/contact-svgrepo-com.svg";
 import skills from "../../img/task-svgrepo-com.svg";
 import about from "../../img/profile-about-mobile-ui-svgrepo-com.svg";
 import projects from "../../img/map-svgrepo-com.svg";
-import cv from './Ahmed.Salama.pdf'
+import cv from "./Ahmed.Salama.pdf";
 import Up from "../up/up";
 const Land = () => {
-  const sections=document.querySelectorAll(".port")
+  const sections = document.querySelectorAll(".port");
   const activeLink = () => {
     const link = document.querySelectorAll(".land img");
     link.forEach((act) => {
@@ -18,55 +18,49 @@ const Land = () => {
         link.forEach((btn) => btn.classList.remove("activelink"));
         this.classList.add("activelink");
       });
-  
     });
   };
-  const removeAllActiveClasses=()=>{
+  const removeAllActiveClasses = () => {
     document.querySelectorAll(".land img").forEach((el) => {
       el.classList.remove("activelink");
     });
-  }
-  const addActiveClass=(id)=>{
+  };
+  const addActiveClass = (id) => {
     var selector = `.land ul li a[href="#${id}"] img`;
     document.querySelector(selector).classList.add("activelink");
-  }
-  const showActive=()=>{
-    onscroll=function(){
+  };
+  const showActive = () => {
+    onscroll = function () {
       let scrollPosition = document.documentElement.scrollTop;
       sections.forEach((section) => {
         if (
           scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
           scrollPosition <
-            section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
+            section.offsetTop +
+              section.offsetHeight -
+              section.offsetHeight * 0.25
         ) {
           var currentId = section.attributes.id.value;
           removeAllActiveClasses();
           addActiveClass(currentId);
         }
       });
-    }
-   
-    
-  }
+    };
+  };
   useEffect(() => {
     activeLink();
-    showActive()
+    showActive();
     new WOW.WOW({
       live: false,
     }).init();
   }, []);
 
   return (
-    <> <Up/>
+    <>
+      {" "}
+      <Up />
       <div className="land port" id="home">
-       
-        <a
-          href={cv}
-          className="cv"
-          data-wow-duration="2s"
-          download
-          alt="cv"
-        >
+        <a href={cv} className="cv" data-wow-duration="2s" download alt="cv">
           Download Cv
         </a>
         <div className="in">
