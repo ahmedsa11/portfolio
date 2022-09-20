@@ -29,9 +29,13 @@ const Land = () => {
     var selector = `.land ul li a[href="#${id}"] img`;
     document.querySelector(selector).classList.add("activelink");
   };
-  const showActive = () => {
-    onscroll=function(){
-      let scrollPosition = document.documentElement.scrollTop;
+//   const showActive = () => {
+     
+// }
+  useEffect(() => {
+    activeLink();
+    window.addEventListener("scroll", () => {
+  let scrollPosition = document.documentElement.scrollTop;
       sections.forEach((section) => {
         if (
           scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
@@ -45,11 +49,7 @@ const Land = () => {
           addActiveClass(currentId);
         }
       });
-  }
-}
-  useEffect(() => {
-    activeLink();
-    showActive()
+    })
     new WOW.WOW({
       live: false,
     }).init(); 
