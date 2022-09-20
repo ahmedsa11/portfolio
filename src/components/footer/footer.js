@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="footer" id="contact">
+      <div className="footer port" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

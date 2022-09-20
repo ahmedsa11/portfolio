@@ -10,6 +10,7 @@ import projects from "../../img/map-svgrepo-com.svg";
 import cv from './Ahmed.Salama.pdf'
 import Up from "../up/up";
 const Land = () => {
+  const sections=document.querySelectorAll(".port")
   const activeLink = () => {
     const link = document.querySelectorAll(".land img");
     link.forEach((act) => {
@@ -17,10 +18,39 @@ const Land = () => {
         link.forEach((btn) => btn.classList.remove("activelink"));
         this.classList.add("activelink");
       });
+  
     });
   };
+  const removeAllActiveClasses=()=>{
+    document.querySelectorAll(".land img").forEach((el) => {
+      el.classList.remove("activelink");
+    });
+  }
+  const addActiveClass=(id)=>{
+    var selector = `.land ul li a[href="#${id}"] img`;
+    document.querySelector(selector).classList.add("activelink");
+  }
+  const showActive=()=>{
+    onscroll=function(){
+      let scrollPosition = document.documentElement.scrollTop;
+      sections.forEach((section) => {
+        if (
+          scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
+          scrollPosition <
+            section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
+        ) {
+          var currentId = section.attributes.id.value;
+          removeAllActiveClasses();
+          addActiveClass(currentId);
+        }
+      });
+    }
+   
+    
+  }
   useEffect(() => {
     activeLink();
+    showActive()
     new WOW.WOW({
       live: false,
     }).init();
@@ -28,7 +58,7 @@ const Land = () => {
 
   return (
     <> <Up/>
-      <div className="land" id="home">
+      <div className="land port" id="home">
        
         <a
           href={cv}

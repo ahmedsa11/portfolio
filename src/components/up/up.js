@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./up.css";
 import { useScrollTo } from "react-use-window-scroll";
 import u from "../../img/up-arrow.png";

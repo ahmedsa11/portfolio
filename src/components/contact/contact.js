@@ -34,7 +34,7 @@ const Contact = () => {
     }).init();
   }, [sent, errorr]);
   return (
-    <div className="contact" id="contact">
+    <div className="contact port" id="contact">
       <h1
         className="text-center"
         style={{ color: "#faa403", fontWeight: "bold", margin: "20px 0px" }}

@@ -14,7 +14,7 @@ const Project = () => {
       >
         Projects
       </h1>
-      <div className="projects" id="projects">
+      <div className="projects port" id="projects">
         <div className="cardd">
           <div className="img">
             <img src={im1} alt="d" />

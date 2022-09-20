@@ -10,7 +10,7 @@ const Skills = () => {
   }, []);
   return (
     <>
-      <div className="skills" id="skills">
+      <div className="skills port" id="skills">
         <div className="timeline">
           <h1
             className="text-center"
