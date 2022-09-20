@@ -29,8 +29,28 @@ const Land = () => {
     var selector = `.land ul li a[href="#${id}"] img`;
     document.querySelector(selector).classList.add("activelink");
   };
-  const showActive = () => {
-    onscroll = function () {
+//   const showActive = () => {
+//     onscroll=function(){
+//       let scrollPosition = document.documentElement.scrollTop;
+//       sections.forEach((section) => {
+//         if (
+//           scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
+//           scrollPosition <
+//             section.offsetTop +
+//               section.offsetHeight -
+//               section.offsetHeight * 0.25
+//         ) {
+//           var currentId = section.attributes.id.value;
+//           removeAllActiveClasses();
+//           addActiveClass(currentId);
+//         }
+//       });
+//   }
+// }
+// ;
+  useEffect(() => {
+    activeLink();
+    onscroll=function(){
       let scrollPosition = document.documentElement.scrollTop;
       sections.forEach((section) => {
         if (
@@ -45,15 +65,11 @@ const Land = () => {
           addActiveClass(currentId);
         }
       });
-    };
-  };
-  useEffect(() => {
-    activeLink();
-    showActive();
+  }
     new WOW.WOW({
       live: false,
-    }).init();
-  }, []);
+    }).init(); 
+  }, [sections]);
 
   return (
     <>
