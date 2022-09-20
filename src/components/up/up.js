@@ -8,7 +8,8 @@ const Up = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 600) {
         // setSc(true);
-        const btn = document.getElementById("up");
+        const btn = document.getElementById("up"); 
+        
         btn.style.display = "block";
       } else {
         // setSc(false);
