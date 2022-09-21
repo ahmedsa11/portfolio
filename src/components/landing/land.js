@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./land.css";
 import im1 from "../../img/photo_2022-09-09_15-36-01.jpg";
 import WOW from "wowjs";
@@ -11,6 +11,8 @@ import cv from "./Ahmed.Salama.pdf";
 import Up from "../up/up";
 const Land = () => {
   const sections = document.querySelectorAll(".port");
+  const [scrollPosition, setscrollPosition] = useState();
+  const [currentId, setcurrentId] = useState("");
   const activeLink = () => {
     const link = document.querySelectorAll(".land img");
     link.forEach((act) => {
@@ -26,16 +28,18 @@ const Land = () => {
     });
   };
   const addActiveClass = (id) => {
-    var selector = `.land ul li a[href="#${id}"] img`;
+    let selector = `.land ul li a[href="#${id}"] img`;
     document.querySelector(selector).classList.add("activelink");
   };
-//   const showActive = () => {
-     
-// }
   useEffect(() => {
     activeLink();
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
+  useEffect(() => {
     window.addEventListener("scroll", () => {
-  let scrollPosition = document.documentElement.scrollTop;
+      setscrollPosition(document.documentElement.scrollTop);
       sections.forEach((section) => {
         if (
           scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
@@ -44,17 +48,13 @@ const Land = () => {
               section.offsetHeight -
               section.offsetHeight * 0.25
         ) {
-          var currentId = section.attributes.id.value;
+          setcurrentId(section.attributes.id.value);
           removeAllActiveClasses();
           addActiveClass(currentId);
         }
       });
-    })
-    new WOW.WOW({
-      live: false,
-    }).init(); 
-  }, []);
-
+    });
+  }, [currentId,sections,scrollPosition]);
   return (
     <>
       {" "}
