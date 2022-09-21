@@ -54,7 +54,7 @@ const Land = () => {
         }
       });
     });
-  }, [currentId]);
+  }, [scrollPosition, sections]);
   return (
     <>
       {" "}
