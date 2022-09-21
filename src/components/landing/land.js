@@ -54,7 +54,7 @@ const Land = () => {
         }
       });
     });
-  }, [scrollPosition]);
+  }, []);
   return (
     <>
       {" "}
