@@ -5,6 +5,7 @@ import im2 from "../../img/custmer-review_DJLRSDP0024-removebg-preview.png";
 import im3 from "../../img/16_iday.svg";
 import im4 from "../../img/0001-removebg-preview.png"
 import im5 from '../../img/cronjob-reminder-removebg-preview.png'
+import im6 from '../../img/nn.png'
 const Project = () => {
   return (
     <>
@@ -41,6 +42,20 @@ const Project = () => {
           <div className="button">
             <a href="https://e-commerce-tan-two.vercel.app/">Live Demo</a>
             <a href="https://github.com/ahmedsa11/eCommercee">GitHub</a>
+          </div>
+        </div>
+        <div className="cardd">
+          <div className="img">
+            <img src={im6} alt="d" />
+          </div>
+          <div className="info">
+            <h3>Netflix Clone</h3>
+            <p>Netflix Clone using react js </p>
+          </div>
+          <hr />
+          <div className="button">
+            <a href="https://netflix-clone-toph.vercel.app/">Live Demo</a>
+            <a href="https://github.com/ahmedsa11/netflixClone/settings">GitHub</a>
           </div>
         </div>
         <div className="cardd">
