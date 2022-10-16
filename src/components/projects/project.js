@@ -6,6 +6,7 @@ import im3 from "../../img/16_iday.svg";
 import im4 from "../../img/0001-removebg-preview.png"
 import im5 from '../../img/cronjob-reminder-removebg-preview.png'
 import im6 from '../../img/nn.png'
+import img7 from '../../img/dash.PNG'
 const Project = () => {
   return (
     <>
@@ -56,6 +57,23 @@ const Project = () => {
           <div className="button">
             <a href="https://netflix-clone-toph.vercel.app/">Live Demo</a>
             <a href="https://github.com/ahmedsa11/netflixClone/settings">GitHub</a>
+          </div>
+        </div>
+        <div className="cardd">
+          <div className="img">
+            <img src={img7} alt="d" />
+          </div>
+          <div className="info">
+            <h3>Static Dashboard</h3>
+            <p>
+              A Static Dashboard 
+              Using(Html Css)
+            </p>
+          </div>
+          <hr />
+          <div className="button">
+            <a href="https://dashboard-xi-beryl.vercel.app/">Live Demo</a>
+            <a href="#">GitHub</a>
           </div>
         </div>
         <div className="cardd">
