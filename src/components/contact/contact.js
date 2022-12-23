@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./contact.css";
-import email from "../../img/email-svgrepo-com.svg";
 import WOW from "wowjs";
-import phone from "../../img/phone-svgrepo-com.svg";
 import emailjs from "@emailjs/browser";
 import system from '../../system.json'
 const Contact = () => {
@@ -45,14 +43,14 @@ const Contact = () => {
 
       <div className="con">
         <div className="email">
-          <img src={email} alt="email" />
+          <img src="img/email-svgrepo-com.svg" alt="email" />
 
           <a href={`mailto:${system.data.contact.email}`}>
             <h2>Click to send a message</h2> {system.data.contact.email}
           </a>
         </div>
         <div className="phone">
-          <img src={phone} alt="phone" />
+          <img src="img/phone-svgrepo-com.svg" alt="phone" />
 
           <a href={`https://wa.me/01066923650?text=`}>
             <h2>Click to send a message</h2> {system.data.contact.phone}

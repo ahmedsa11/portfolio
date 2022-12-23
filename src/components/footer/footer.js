@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "./footer.css";
-import git from "../../img/github-sign.png";
 import WOW from "wowjs";
-import li from "../../img/linkedin-logo.png";
 import system from '../../system.json'
 const Footer = () => {
   useEffect(() => {
@@ -20,12 +18,12 @@ const Footer = () => {
               <ul>
                 <li className="wow fadeInLeft"data-wow-duration="2s">
                   <a href="https://github.com/ahmedsa11">
-                    <img src={git} alt="git" />
+                    <img src="img/github-sign.png" alt="git" />
                   </a>
                 </li>
                 <li className="wow fadeInRight"data-wow-duration="2s">
                   <a href="https://www.linkedin.com/in/ahmed-salama-a18b48200">
-                    <img src={li} alt="li" />
+                    <img src="img/linkedin-logo.png" alt="li" />
                   </a>
                 </li>
               </ul>

@@ -25,7 +25,7 @@
     flex-grow: 1;
     min-width: 50%;
     background-color: #d4d9df;
-    background: url("../../img/sd.jpg");
+    background: url("/public/img/sd.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./skills.css";
 import WOW from "wowjs";
-import r1 from "../../img/right-svgrepo-com.svg";
 import system from '../../system.json'
 const Skills = () => {
   useEffect(() => {
@@ -73,7 +72,7 @@ const Skills = () => {
                           {system.data.aboutme.skills.TechnicalSkills1.map((sk,idx) =>{
                             return(
                               <li key={idx}>
-                              <img src={r1} alt="d" />
+                              <img src="img/right-svgrepo-com.svg" alt="d" />
                               {sk}
                             </li>
                             )
@@ -85,7 +84,7 @@ const Skills = () => {
                         {system.data.aboutme.skills.TechnicalSkills2.map((sk,idx) =>{
                             return(
                               <li key={idx}>
-                              <img src={r1} alt="d" />
+                              <img src="img/right-svgrepo-com.svg" alt="d" />
                               {sk}
                             </li>
                             )
@@ -104,7 +103,7 @@ const Skills = () => {
                   {system.data.aboutme.skills.SoftSkills.map((sk,idx) =>{
                             return(
                               <li key={idx}>
-                              <img src={r1} alt="d" />
+                              <img src="img/right-svgrepo-com.svg" alt="d" />
                               {sk}
                             </li>
                             )

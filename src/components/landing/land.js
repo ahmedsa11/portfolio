@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./land.css";
-import im1 from "../../img/photo_2022-09-09_15-36-01.jpg";
 import WOW from "wowjs";
-import home from "../../img/home-svgrepo-com.svg";
-import contact from "../../img/contact-svgrepo-com.svg";
-import skills from "../../img/task-svgrepo-com.svg";
-import about from "../../img/profile-about-mobile-ui-svgrepo-com.svg";
-import projects from "../../img/map-svgrepo-com.svg";
 import cv from "./Ahmed.Salama.pdf";
 import Up from "../up/up";
 import system from '../../system.json'
@@ -81,34 +75,34 @@ const Land = () => {
             </div>
           </div>
           <div className="wow fadeInUp img" data-wow-duration="2s">
-            <img src={im1} alt="pr" />
+            <img src="img/photo_2022-09-09_15-36-01.jpg" alt="pr" />
           </div>
         </div>
         <div className="navbarr">
           <ul className="wow fadeInRight" data-wow-duration="2s">
             <li>
               <a href="#home">
-                <img className="activelink" src={home} alt="home" />
+                <img className="activelink" src="img/home-svgrepo-com.svg" alt="home" />
               </a>
             </li>
             <li>
               <a href="#about">
-                <img src={about} alt="about" />
+                <img src="img/profile-about-mobile-ui-svgrepo-com.svg" alt="about" />
               </a>
             </li>
             <li>
               <a href="#skills">
-                <img src={skills} alt="skills" />
+                <img src="img/task-svgrepo-com.svg" alt="skills" />
               </a>
             </li>
             <li>
               <a href="#projects">
-                <img src={projects} alt="projects" />
+                <img src="img/map-svgrepo-com.svg" alt="projects" />
               </a>
             </li>
             <li>
               <a href="#contact">
-                <img src={contact} alt="contact" />
+                <img src="img/contact-svgrepo-com.svg" alt="contact" />
               </a>
             </li>
           </ul>

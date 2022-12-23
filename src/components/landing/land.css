@@ -1,7 +1,7 @@
 .land{
     padding-top: 100px;
     height: 100vh;
-    background-image: url('../../img/Picture1.jpg');
+    background-image: url("/public/img/Picture1.jpg");
     background-size: cover;
     background-repeat: none;
     overflow: hidden;
