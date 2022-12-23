@@ -9,6 +9,7 @@ import about from "../../img/profile-about-mobile-ui-svgrepo-com.svg";
 import projects from "../../img/map-svgrepo-com.svg";
 import cv from "./Ahmed.Salama.pdf";
 import Up from "../up/up";
+import system from '../../system.json'
 const Land = () => {
   const sections = document.querySelectorAll(".port");
   const [scrollPosition, setscrollPosition] = useState();
@@ -67,15 +68,15 @@ const Land = () => {
           <div className="wrapper">
             <div className="static-txt">
               <h4 className="wow fadeInDown" data-wow-duration="2s">
-                Hello I'm
+                {system.data.intro.welcome}
               </h4>
               <h1 className="wow fadeIn" data-wow-duration="4s">
-                Ahmed Salama{" "}
+              {system.data.intro.name}
               </h1>
             </div>
             <div className="dynamic-txt">
               <h1 id="txt">
-                Front-End Web Developer <span>React.js</span>
+              {system.data.intro.jobtitle}<span>{system.data.intro.technology}</span>
               </h1>
             </div>
           </div>

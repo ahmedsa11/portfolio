@@ -1,0 +1,46 @@
+{
+    "data": {
+    "intro":{
+        "welcome": "Hello I'm",
+        "name":"Ahmed Salama",
+        "department": "Software Engineer",
+        "jobtitle":"Front-End Web Developer",
+        "technology":"React.js"
+    },
+    "aboutme": {
+        "description":"Fresh graduate who is interested about Front End Developer (ReactJs) , Interested in learning web development, staying updated with the latest technologies in this field, seeking an opportunity to utilize my previous training experience, academic background, and my skills in web development as front-end developer",
+        "education":["Faculty of Computer and Informatics-Suez Canal University","Bachelor's Degree,Computer Science department (2022)","Overall rating: ( Very Good )","Project Grad: ( A+ )"],
+        "experience":["Front-End","Up to one year work with react js & vanilla js"],
+        "skills":{
+            "TechnicalSkills1":["Html", "Css",
+             "Bootstrap",
+             "Sass",
+             "Java script",
+             "React js",
+             "Redux"],
+             "TechnicalSkills2":[
+             "Next js",
+             "Socket.io",
+             "APIS",
+             "Oop",
+             "Ajax",
+             "Git/Git hub"],
+             "SoftSkills":["COMMUNICATION",
+             "PRESENTATION",
+             "Effective Time Managment",
+             "DESISION-MAKING"]
+        }
+
+    },
+    "projects":[{"title":"Connect","img":"img/la.png","description":"Social Communication System for Deaf-mute and Normal people","live":"#","github":"https://github.com/ahmedsa11/projectgraduation"},
+    {"title":"Static Dashboard","img":"img/dash.PNG","description":"A Static Dashboard Using(Html Css)","live":"https://dashboard-xi-beryl.vercel.app/","github":"#"},
+    {"title":"Netflix Clone","img":"img/nn.png","description":"Netflix Clone using react js","live":"https://netflix-clone-toph.vercel.app/","github":"https://github.com/ahmedsa11/netflixClone"},
+    {"title":"Furniture company","img":"img/0001-removebg-preview.png","description":"A furniture company that only displays products with great design Using (html,css,bootstrap)","live":"https://aletalya.vercel.app/","github":"https://github.com/ahmedsa11/aletalya"},
+    {"title":"ReminderApp","img":"img/cronjob-reminder-removebg-preview.png","description":"The user enters the message and enters the time of the reminder, then shows him the remaining period Using (React js, redux)","live":"https://simple-reminder-app.vercel.app/","github":"https://github.com/ahmedsa11/simple-reminderApp"}],
+    "contact":{
+        "email":"Ahmedsa122333@gmail.com",
+        "phone":"+201066923650"
+    },
+    "copyright":"Built with 🤍 By Ahmed Salama 2022"
+}
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./skills.css";
 import WOW from "wowjs";
 import r1 from "../../img/right-svgrepo-com.svg";
+import system from '../../system.json'
 const Skills = () => {
   useEffect(() => {
     new WOW.WOW({
@@ -32,12 +33,12 @@ const Skills = () => {
                   >
                     <h3>Education</h3>
                     <p>
-                      Faculty of Computer and Informatics-Suez Canal University  </p>
+                      {system.data.aboutme.education[0]}  </p>
                       <hr />
-                      <p>Bachelor's Degree,Computer Science department (2022)</p>  
+                      <p>{system.data.aboutme.education[1]} </p>  
                       <hr />
-                      <p> Overall rating: ( Very Good ) </p>  <hr />
-                      <p> Project Grad: ( A+ )</p> 
+                      <p>{system.data.aboutme.education[2]} </p>  <hr />
+                      <p> {system.data.aboutme.education[3]} </p> 
                   
                   </div>
                 </div>
@@ -51,8 +52,8 @@ const Skills = () => {
                     data-wow-duration="1s"
                     data-wow-offset="30"
                   >
-                    <h3>Front-End </h3>
-                    <p>Up to one year work with react js {"&"} vanilla js</p>
+                    <h3>{system.data.aboutme.experience[0]} </h3>
+                    <p>{system.data.aboutme.experience[1]} </p>
                   </div>
                 </div>
               </div>
@@ -69,53 +70,26 @@ const Skills = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <ul className="sk">
-                          <li>
-                            <img src={r1} alt="d" />
-                            Html
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Css
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Bootstrap
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Sass
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Java script
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> React js
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Redux toolkit
-                          </li>
+                          {system.data.aboutme.skills.TechnicalSkills1.map((sk,idx) =>{
+                            return(
+                              <li key={idx}>
+                              <img src={r1} alt="d" />
+                              {sk}
+                            </li>
+                            )
+                          })}
                         </ul>
                       </div>
                       <div className="col-md-6">
                         <ul className="sk">
-                          <li>
-                            <img src={r1} alt="d" /> Next js
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Socket.io
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> APIS
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Oop
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Ajax
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> unity testing
-                          </li>
-                          <li>
-                            <img src={r1} alt="d" /> Git/Git hub
-                          </li>
+                        {system.data.aboutme.skills.TechnicalSkills2.map((sk,idx) =>{
+                            return(
+                              <li key={idx}>
+                              <img src={r1} alt="d" />
+                              {sk}
+                            </li>
+                            )
+                          })}
                         </ul>
                       </div>
                     </div>
@@ -127,22 +101,14 @@ const Skills = () => {
                 <div className="content">
                   <h3>Soft Skills</h3>
                   <ul className="sk">
-                    <li>
-                      <img src={r1} alt="d" />
-                      COMMUNICATION
-                    </li>
-                    <li>
-                      <img src={r1} alt="d" />
-                      PRESENTATION
-                    </li>
-                    <li>
-                      <img src={r1} alt="d" />
-                      Effective Time Managment
-                    </li>
-                    <li>
-                      <img src={r1} alt="d" />
-                      DESISION-MAKING
-                    </li>
+                  {system.data.aboutme.skills.SoftSkills.map((sk,idx) =>{
+                            return(
+                              <li key={idx}>
+                              <img src={r1} alt="d" />
+                              {sk}
+                            </li>
+                            )
+                          })}
                   </ul>
                 </div>
               </div>

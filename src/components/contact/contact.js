@@ -4,6 +4,7 @@ import email from "../../img/email-svgrepo-com.svg";
 import WOW from "wowjs";
 import phone from "../../img/phone-svgrepo-com.svg";
 import emailjs from "@emailjs/browser";
+import system from '../../system.json'
 const Contact = () => {
   const form = useRef();
   const [sent, setsent] = useState(false);
@@ -46,15 +47,15 @@ const Contact = () => {
         <div className="email">
           <img src={email} alt="email" />
 
-          <a href="mailto:Ahmedsa122333@gmail.com">
-            <h2>Click to send a message</h2> Ahmedsa122333@gmail.com
+          <a href={`mailto:${system.data.contact.email}`}>
+            <h2>Click to send a message</h2> {system.data.contact.email}
           </a>
         </div>
         <div className="phone">
           <img src={phone} alt="phone" />
 
-          <a href="https://wa.me/01066923650?text=">
-            <h2>Click to send a message</h2> +201066923650
+          <a href={`https://wa.me/01066923650?text=`}>
+            <h2>Click to send a message</h2> {system.data.contact.phone}
           </a>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import system from '../../system.json'
 const About = () => {
   return (
     <>
@@ -10,17 +11,12 @@ const About = () => {
         <div className="article_container_content">
           <div className="the">
             <div className="line"></div>
-            <h4>Ahmed Salama</h4>
+            <h4>{system.data.intro.name}</h4>
             <div className="line"></div>
           </div>
           <h1>About Me</h1>
           <div className="divider"></div>
-          <p>
-            Fresh graduate who is interested about Front End Developer (ReactJs)
-            , Interested in learning web development, staying updated with the
-            latest technologies in this field, seeking an opportunity to utilize
-            my previous training experience, academic background, and my skills
-            in web development as front-end developer
+          <p>{system.data.aboutme.description}
           </p>
         </div>
       </div>

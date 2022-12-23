@@ -3,6 +3,7 @@ import "./footer.css";
 import git from "../../img/github-sign.png";
 import WOW from "wowjs";
 import li from "../../img/linkedin-logo.png";
+import system from '../../system.json'
 const Footer = () => {
   useEffect(() => {
     new WOW.WOW({
@@ -31,7 +32,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center">Created By Ahmed Salama &copy; 2022</p>
+        <p className="text-center">{system.data.copyright} &copy;</p>
       </div>
     </>
   );
