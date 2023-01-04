@@ -57,6 +57,19 @@ const Skills = () => {
                 </div>
               </div>
               <div className="clearfix"></div>
+              <div className="right">
+                <div className="content">
+                  <div
+                    className="wow animate__bounceInLeft"
+                    data-wow-duration="1s"
+                    data-wow-offset="30"
+                  >
+                    <h3>{system.data.aboutme.experience[2]} </h3>
+                    <p>{system.data.aboutme.experience[3]} </p>
+                  </div>
+                </div>
+              </div>
+              <div className="clearfix"></div>
               <div className="year">Skills</div>
               <div className="right">
                 <div className="content">
