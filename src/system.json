@@ -32,14 +32,14 @@
 
     },
     "projects":[{"title":"Connect","img":"img/la.png","description":"(Graduation Project) Social Communication System for Deaf-mute and Normal people","live":"https://projectgraduation.vercel.app/","github":"https://github.com/ahmedsa11/projectgraduation"},
-    {"title":"Static Dashboard","img":"img/dash.png","description":"A Static Dashboard Using(Html Css)","live":"https://dashboard-xi-beryl.vercel.app/","github":"https://github.com/ahmedsa11/Dashboard"},
+    {"title":"Static Dashboard","img":"img/Dachboard.PNG","description":"A Static Dashboard Using(Html Css)","live":"https://dashboard-xi-beryl.vercel.app/","github":"https://github.com/ahmedsa11/Dashboard"},
     {"title":"Full E-Commerce","img":"img/sto.png","description":"full E-Commerce  with greatful features (filteration, crud operation , payment methods ,Authantication, ... and more) Using Reactjs Redux","live":"https://store-psi-lovat.vercel.app/","github":"https://github.com/ahmedsa11/store"},
     {"title":"Blog Template","img":"img/favicon.png","description":"A blog to display articles by converting markdown files to html that during rendering  Using Reactjs","live":"https://tabaraniarticles.vercel.app/","github":"https://github.com/ahmedsa11/Blog-Template"},
     {"title":"Question App","img":"img/q.png","description":"Simple question app Using Reactjs","live":"https://question-app-chi.vercel.app/","github":"https://github.com/ahmedsa11/question-app"},
     {"title":"Movie App","img":"img/M.png","description":"A movie application that allows you to search for many movies Using Reactjs","live":"https://movieapp-sepia-seven.vercel.app/","github":"https://github.com/ahmedsa11/movieapp"},
     {"title":"Netflix Clone","img":"img/nn.png","description":"Netflix Clone using react js","live":"https://netflix-clone-toph.vercel.app/","github":"https://github.com/ahmedsa11/netflixClone"},
     {"title":"Furniture company","img":"img/0001-removebg-preview.png","description":"A furniture company that only displays products with great design Using (html,css,bootstrap)","live":"https://aletalya.vercel.app/","github":"https://github.com/ahmedsa11/aletalya"},
-    {"title":"Al Noor Digital Library","img":"img/eln.png","description":"Al Noor Digital Library new template for some Client Using html css ","live":"https://new-template-ashy.vercel.app/","github":"https://github.com/ahmedsa11/newtemplate"},
+    {"title":"Al Noor Digital Library","img":"img/library.PNG","description":"Al Noor Digital Library new template for some Client Using html css ","live":"https://new-template-ashy.vercel.app/","github":"https://github.com/ahmedsa11/newtemplate"},
     {"title":"ReminderApp","img":"img/cronjob-reminder-removebg-preview.png","description":"The user enters the message and enters the time of the reminder, then shows him the remaining period Using (React js, redux)","live":"https://simple-reminder-app.vercel.app/","github":"https://github.com/ahmedsa11/simple-reminderApp"}],
     "contact":{
         "email":"Ahmedsa122333@gmail.com",
