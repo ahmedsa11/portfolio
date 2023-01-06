@@ -15,7 +15,7 @@ const Project = () => {
           return(
             <div key={idx} className="cardd">
             <div className="img">
-              <img src={item.img} alt="d" />
+              <img src={item.img?item.img:null} alt="d" />
             </div>
             <div className="info">
               <h3>{item.title}</h3>
