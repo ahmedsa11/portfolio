@@ -32,8 +32,8 @@
 
     },
     "projects":[{"title":"Connect","img":"img/la.png","description":"(Graduation Project) Social Communication System for Deaf-mute and Normal people","live":"#","github":"https://github.com/ahmedsa11/projectgraduation"},
-    {"title":"Static Dashboard","img":"img/dash.PNG","description":"A Static Dashboard Using(Html Css)","live":"https://dashboard-xi-beryl.vercel.app/","github":"https://github.com/ahmedsa11/Dashboard"},
-    {"title":"Full E-Commerce","img":"img/sto.PNG","description":"full E-Commerce  with greatful features (Search, filteration, crud operation , payment methods ,Authantication, ... and more) Using Reactjs Redux","live":"#","github":"#"},
+    {"title":"Static Dashboard","img":"img/dash.png","description":"A Static Dashboard Using(Html Css)","live":"https://dashboard-xi-beryl.vercel.app/","github":"https://github.com/ahmedsa11/Dashboard"},
+    {"title":"Full E-Commerce","img":"img/sto.png","description":"full E-Commerce  with greatful features (filteration, crud operation , payment methods ,Authantication, ... and more) Using Reactjs Redux","live":"https://store-psi-lovat.vercel.app/","github":"https://github.com/ahmedsa11/store"},
     {"title":"Blog Template","img":"img/favicon.png","description":"A blog to display articles by converting markdown files to html that during rendering  Using Reactjs","live":"https://tabaraniarticles.vercel.app/","github":"https://github.com/ahmedsa11/Blog-Template"},
     {"title":"Question App","img":"img/q.png","description":"Simple question app Using Reactjs","live":"https://question-app-chi.vercel.app/","github":"https://github.com/ahmedsa11/question-app"},
     {"title":"Movie App","img":"img/m.png","description":"A movie application that allows you to search for many movies Using Reactjs","live":"https://movieapp-sepia-seven.vercel.app/","github":"https://github.com/ahmedsa11/movieapp"},
